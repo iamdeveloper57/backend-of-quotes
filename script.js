@@ -36,6 +36,7 @@ document.getElementById("show-signup").addEventListener("click", function () {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "Authorization": `Bearer ${localStorage.getItem("authToken")}`,
           },
           body: JSON.stringify(user),
         });
@@ -263,7 +264,7 @@ document.getElementById("show-signup").addEventListener("click", function () {
     }
   
     try {
-      const data = { quote: input.value };
+      const data = { userquote: input.value };
   
       // Await the response from fetch
       const response = await fetch("http://localhost:1000/quote", {
