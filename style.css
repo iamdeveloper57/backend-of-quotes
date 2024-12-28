@@ -1,0 +1,208 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-box {
+    padding: 40px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  .toggle-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .toggle-form span {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .toggle-form span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form visibility control */
+  #signup-form {
+    display: none;
+  }
+  
+  
+  /* Main Container Styles */
+  .main-container {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    /* Consider using JavaScript to toggle this */
+    overflow-y: auto;
+    /* Changed to auto for better usability */
+  }
+  
+  /* Navigation Bar Styles */
+  .nav-bar {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Logout Button Styles */
+  .logoutBtn {
+    width: 85px;
+    height: 35px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  /* Input Container Styles */
+  .inputContainer {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-section {
+    margin-top: 100px;
+  }
+  
+  /* Posts Container Styles */
+  .posts {
+    height: calc(100vh - 200px);
+    width: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual Post Styles */
+  .posts p {
+    width: 100%;
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border-radius: 4px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Box Styles for Posts */
+  .posts .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0.05rem solid black;
+    margin-top: 10px;
+    background-color: #ccc;
+    color: black;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .posts {
+      width: 90%;
+      /* Full width on smaller screens */
+      align-items: center;
+    }
+  
+    .nav-bar {
+      padding: 10px;
+      /* Less padding on smaller screens */
+    }
+  
+    .logoutBtn {
+      width: 100px;
+      /* Smaller button on mobile */
+    }
+  }
