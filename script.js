@@ -263,7 +263,7 @@ document.getElementById("show-signup").addEventListener("click", function () {
     }
   
     try {
-      const data = { userquote: input.value };
+      const data = { quote: input.value };
   
       // Await the response from fetch
       const response = await fetch("http://localhost:1000/quote", {
